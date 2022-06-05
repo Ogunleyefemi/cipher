@@ -42,13 +42,15 @@ function thirdfunction(){
 alert(thirdfunction());
 
 
-//function to count numbers of characters in the sentence.
-let total = sentence.length("");
+//function to count numbers of characters in the sentence and divide.
 function divideByTwo(){
+    let total = sentence.length;
     let answer = total / 2;
+    let roundDown = Math.floor("answer");
     return answer;
 }
 alert(divideByTwo());
+
 
 
 
