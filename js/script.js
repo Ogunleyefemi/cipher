@@ -1,3 +1,7 @@
+$(document).ready(function() {
+
+
+
 let sentence = prompt("input a sentence");
 console.log();
 //taking the first and the last letter
@@ -43,18 +47,25 @@ alert(thirdfunction());
 
 
 //function to count numbers of characters in the sentence and divide.
+// let thirdfunction = sentence.concat(joinReverse);
 function divideByTwo(){
     let total = sentence.length;
     let answer = total / 2;
-    let roundDown = Math.floor("answer");
-    return answer;
+    let roundDown = Math.floor(answer);
+    let position = sentence.charAt(roundDown);
+    let lastProblem = position.concat(sentence,joinArray());
+    let final = lastProblem(joinReverse);
+    return final;
 }
 alert(divideByTwo());
 
 
 
-
-
-
-
+$(".yellow").click(function() {
+    alert(sentence);
+});
+$(".red").click(function() {
+    alert(final);
+});
+});
 
